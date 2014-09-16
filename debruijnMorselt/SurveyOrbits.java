@@ -3,6 +3,8 @@ package debruijnMorselt;
 import java.util.Set;
 import java.util.TreeSet;
 
+import com.google.common.base.Strings;
+
 public class SurveyOrbits {
 
 	private static Set<String> allDyckPaths;
@@ -87,9 +89,10 @@ public class SurveyOrbits {
 
 	private static void printResults() {
 		System.out.println("Results for " + numNodes + " nodes:\n");
-		System.out.println("   Distinct rooted trees: " + allDyckPaths.size() + "\n");
-		System.out.println("   Number of orbits     : " + totalOrbits + "\n");
-		System.out.println("   Size of largest orbit: " + maxOrbitSize + "\n\n");
+		System.out.println("\tDistinct rooted trees: " + allDyckPaths.size() + "\n");
+		System.out.println("\tNumber of orbits     : " + totalOrbits + "\n");
+		System.out.println("\tSize of largest orbit: " + maxOrbitSize + "\n");
+		System.out.println(Strings.repeat("=", 60));
 	}
 
 	public static void main(String[] args) {
