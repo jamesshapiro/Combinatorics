@@ -86,10 +86,10 @@ public class SurveyOrbits {
 	}
 
 	private static void printResults() {
-		System.out.println("Results for " + numNodes + " nodes:");
-		System.out.println("   Distinct rooted trees: " + allDyckPaths.size());
-		System.out.println("   Number of orbits     : " + totalOrbits);
-		System.out.println("   Size of largest orbit: " + maxOrbitSize);
+		System.out.println("Results for " + numNodes + " nodes:\n");
+		System.out.println("   Distinct rooted trees: " + allDyckPaths.size() + "\n");
+		System.out.println("   Number of orbits     : " + totalOrbits + "\n");
+		System.out.println("   Size of largest orbit: " + maxOrbitSize + "\n\n");
 	}
 
 	public static void main(String[] args) {
