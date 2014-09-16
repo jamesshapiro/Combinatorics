@@ -55,7 +55,7 @@ public class Node {
 	 * @param argIndex
 	 * @param dyckPath
 	 */
-	public Node(int argIndex, String dyckPath) {
+	private Node(int argIndex, String dyckPath) {
 		index = argIndex;
 		int branchHeight = 0;
 		while (index < dyckPath.length() && dyckPath.charAt(index) == '1') {
